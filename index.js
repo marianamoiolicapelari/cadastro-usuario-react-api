@@ -1,4 +1,17 @@
+<<<<<<< HEAD
 const { request } = require('express')
+=======
+/*
+  - Query params => meusite.com/users?nome=rodolfo&age=28 // FILTROS
+  - Route params => /users/2  // BUSCAR, DELETAR OU ARMAZENAR ALGO ESPECÍFICO
+  - Request Body => {"name":"Rodolfo", "age":28}
+  - GET          => Buscar informação no back-end
+  - POST         => Criar informação no back-end
+  - PUT / PATCH  => Alterar/Atualizar informação no back-end
+  - DELETE       => Deletar informação no back-end
+  - Middleware   => INTERCEPTADOR => Tem o poder de parar ou alterar dados da requisição
+*/
+>>>>>>> ed4f11b12c8461b5d9c8a2b02dfa3295b91c6b9c
 const express = require('express')
 const uuid = require('uuid')
 
