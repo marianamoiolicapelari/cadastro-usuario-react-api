@@ -2,12 +2,10 @@
   - Query params => meusite.com/users?nome=rodolfo&age=28 // FILTROS
   - Route params => /users/2  // BUSCAR, DELETAR OU ARMAZENAR ALGO ESPECÍFICO
   - Request Body => {"name":"Rodolfo", "age":28}
-
   - GET          => Buscar informação no back-end
   - POST         => Criar informação no back-end
   - PUT / PATCH  => Alterar/Atualizar informação no back-end
   - DELETE       => Deletar informação no back-end
-
   - Middleware   => INTERCEPTADOR => Tem o poder de parar ou alterar dados da requisição
 */
 const express = require('express')
