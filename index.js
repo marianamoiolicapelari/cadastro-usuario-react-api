@@ -2,10 +2,12 @@ const { request } = require('express')
 const express = require('express')
 const uuid = require('uuid')
 
-const port = 3000
+let cors = require('cors')
+
+const port = 3001
 const app = express()
 app.use(express.json())
-
+app.use(cors())
 
 const users = []
 
@@ -44,7 +46,6 @@ app.put('/users/:id', checkUserId, (request, response) => {
     const index = request.userIndex
     const id = request.userId
 
-
     const updatedUser = { id, name, age }
 
     users[index] = updatedUser
@@ -59,7 +60,6 @@ app.delete('/users/:id', checkUserId, (request, response) => {
 
     return response.status(204).json()
 })
-
 
 app.listen(3000, () => {
     console.log(`Server started on port ${port}`)
