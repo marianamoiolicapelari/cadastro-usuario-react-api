@@ -61,6 +61,6 @@ app.delete('/users/:id', checkUserId, (request, response) => {
     return response.status(204).json()
 })
 
-app.listen(3000, () => {
+app.listen(3001, () => {
     console.log(`Server started on port ${port}`)
 })
